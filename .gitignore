@@ -1,0 +1,6 @@
+*.pyc
+*.npy
+*.txt
+*.so
+dataset/
+descriptors/
