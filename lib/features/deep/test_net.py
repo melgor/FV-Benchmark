@@ -8,9 +8,9 @@ from sklearn.metrics import accuracy_score
 Test net (Identification) which is set in config with given DataSet. 
 WARNING: The Net have to be learned on same datset (Same number of labels)
 '''
-def testNet(name, config):
-  dataset      = DataSet(name,"deep")
+def testNet(config):
   config       = parse_deep_config(config)
+  dataset      = DataSet("deep",config)
   extractor    = Extractor(config, config["caffe_proto_path_deploy"])
   path_data     = dataset.loadPathRawData()
   predictions = []
@@ -69,7 +69,7 @@ def testNetFromFile(path_to_file, config):
   y_pred_label = np.hstack(predictions)
   # y_pred_label = np.argmax(predictions, axis=1)
   labels       = np.asarray(labels)
-  print labels, y_pred_label
+  # print labels, y_pred_label
   print "Accuracy: ", accuracy_score(labels, y_pred_label)
   
   

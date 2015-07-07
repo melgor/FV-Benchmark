@@ -4,3 +4,7 @@
 *.so
 dataset/
 descriptors/
+DataSets/
+Nets/
+models/
+FELIX_data/
