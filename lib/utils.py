@@ -31,6 +31,13 @@ def load_cPickle(name_file):
   return tmp
 
 
+def load_cPickleNormal(name_file):
+  '''Load file in cPickle format'''
+  f = open(name_file,'rb')
+  tmp = cPickle.load(f)
+  f.close()
+  return tmp
+
 def parse_deep_config(config):
   with open(config,'r') as f:
     config = json.load(f)

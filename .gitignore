@@ -1,7 +1,8 @@
 *.pyc
 *.npy
-*.txt
 *.so
+*.o
+*.bin
 dataset/
 descriptors/
 DataSets/
