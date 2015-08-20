@@ -17,8 +17,8 @@ class JointBayesian:
         Xc_i = [Xc[y == k] for k in set(y)]
         x_Xc_sum = [np.sum(xc_i, axis=0) for xc_i in Xc_i]
         
-        S_mu, S_eps = self._computeCovarianceMatrices(X, y)
-        #S_mu, S_eps = self._randomInitialization()
+        #S_mu, S_eps = self._computeCovarianceMatrices(X, y)
+        S_mu, S_eps = self._randomInitialization()
         iteration = 1
         converged = False
         error_S_mu = error_S_eps = 1e20

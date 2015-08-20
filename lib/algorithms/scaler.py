@@ -22,7 +22,7 @@ class Scaler(object):
         self.list_max_min.append(( min_value, max_value, max_value - min_value))
       
   '''With found scale parameter, transform data to desire range'''    
-  def transform(self,data):
+  def transform(self, data):
     data_trans = deepcopy(data)
     for idx in range(self.num_features):
       feat = data[:,idx]

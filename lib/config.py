@@ -14,12 +14,12 @@ models_path = os.path.join(base_path, "models")
 
 #name of files to read
 name_read_labels      = "labels.txt"
-name_read_train       = "train.txt"
-name_read_val         = "val.txt"
-name_read_train_ver_1 = "train_ver_1.txt"
-name_read_train_ver_2 = "train_ver_2.txt"
-name_read_val_ver_1   = "val_ver_1.txt"
-name_read_val_ver_2   = "val_ver_2.txt"
+name_read_train       = "train_nb.txt"
+name_read_val         = "val_nb.txt"
+name_read_train_ver_1 = "train_nb_ver_1.txt"
+name_read_train_ver_2 = "train_nb_ver_2.txt"
+name_read_val_ver_1   = "val_nb_ver_1.txt"
+name_read_val_ver_2   = "val_nb_ver_2.txt"
 
 #name of files for dataset and features to save
 name_data_color    = 'data.npy'

@@ -3,7 +3,7 @@
 *.so
 *.o
 *.bin
-dataset/
+databases/
 descriptors/
 DataSets/
 Nets/

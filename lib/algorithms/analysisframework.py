@@ -108,7 +108,7 @@ class AnalysisFramework:
       return self.computeStatsMulti(compressed_descriptors, ground_truth, distance)
     
     def supervisedLearningLDA(self, training_data, ground_truth ,dim=50, distance = cosineDistance):
-      self.supervised_learning = LDA(dim)        
+      self.supervised_learning = LDA(n_components = dim)        
       self.supervised_learning.fit(training_data[0], training_data[1])
       self.saveSupervisedAlgorithm('lda', self.supervised_learning)
       descriptors_ = self.supervised_learning.transform(self.descriptors)
