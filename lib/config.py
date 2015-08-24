@@ -12,16 +12,16 @@ descriptors_path = os.path.join(base_path, "descriptors")
 databases_path = os.path.join(base_path, "databases")
 models_path = os.path.join(base_path, "models")
 
-#name of files to read
+''' SECTION: DATABASE, name of files to read'''
 name_read_labels      = "labels.txt"
-name_read_train       = "train_nb.txt"
-name_read_val         = "val_nb.txt"
-name_read_train_ver_1 = "train_nb_ver_1.txt"
-name_read_train_ver_2 = "train_nb_ver_2.txt"
-name_read_val_ver_1   = "val_nb_ver_1.txt"
-name_read_val_ver_2   = "val_nb_ver_2.txt"
+name_read_train       = "train.txt"
+name_read_val         = "val.txt"
+name_read_train_ver_1 = "train_ver_1.txt"
+name_read_train_ver_2 = "train_ver_2.txt"
+name_read_val_ver_1   = "val_ver_1.txt"
+name_read_val_ver_2   = "val_ver_2.txt"
 
-#name of files for dataset and features to save
+''' SECTION: SAVED DATABASE, name of files for dataset and features to save'''
 name_data_color    = 'data.npy'
 name_data_gray     = 'data_gray.npy'
 name_data_filename = 'data_filename.txt'
@@ -34,7 +34,7 @@ name_ver_train     = 'labels_ver_train.npy'
 name_ver_val       = 'labels_ver_val.npy'
 in_one_file        = 1000
 
-#Features
+''' SECTION: FEATURES '''
 LBP, ULBP, DEEP = "lbp", "ulbp","deep"
 descriptor_types = [LBP, ULBP,DEEP]
 
@@ -51,7 +51,7 @@ caffe_gpu_id             = 1
 size_image = (152,82)
 normalize = False
 
-#LFW setting
+''' SECTION: LFW, setting'''
 lfw_pairs_file       = "pairs.txt"
 lfw_list_images_file = "list_images_lfw.txt"
 lfw_data_path        = "lfw_data.npy"
